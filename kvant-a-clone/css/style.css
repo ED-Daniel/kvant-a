@@ -1,0 +1,507 @@
+/* Kvant-A Custom Styles */
+/* Font: Roboto from Google Fonts (connected in HTML) */
+/* Accent color: #ffc50b (golden yellow) */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    -webkit-transition: background .2s ease-out .1s;
+    -moz-transition: background .2s ease-out .1s;
+    -o-transition: background .2s ease-out .1s;
+    transition: background .2s ease-out .1s;
+}
+
+a {
+    color: #000;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+/* === Top Navigation Bar (main page desktop) === */
+.main-top {
+    margin: 2rem 0 3.2rem;
+}
+
+.navbar-main {
+    padding: 0;
+    margin-left: -50px;
+}
+
+.navbar-main a {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    padding: 4px 0;
+}
+
+.navbar-main a:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: -6px;
+    margin-right: 11px;
+    border: 7px solid transparent;
+}
+
+.navbar-main .active a:before {
+    border-color: #ffc50b;
+}
+
+/* === Contacts in header === */
+.main-top .contacts {
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.main-top .contacts > * {
+    margin-bottom: 30px;
+}
+
+.main-top .contacts .fas {
+    font-size: 21px;
+    border: 3px solid #ffc50b;
+    line-height: 44px;
+    width: 50px;
+    margin-right: 15px;
+    background: transparent;
+    text-align: center;
+    color: #000;
+}
+
+.main-top .contacts .fas:hover {
+    background: #ffc50b;
+}
+
+.main-top .contacts a {
+    color: #000;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+/* === Main Title === */
+.main-title {
+    margin: 30px 0;
+}
+
+.main-title img {
+    margin-right: 15px;
+    margin-left: -30px;
+}
+
+/* === Dropdown Menu === */
+.dropdown-menu {
+    border-radius: 0;
+    margin: 0;
+    margin-top: -1px;
+}
+
+/* === Inner Page Navbar === */
+.navbar-inner {
+    padding-top: 0;
+}
+
+.navbar-inner .logo img {
+    max-height: 180px;
+}
+
+.logo-img {
+    padding-right: 40px;
+}
+
+.navbar-inner .navbar-nav > li > a {
+    border: 10px solid transparent;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.navbar-inner .navbar-nav > li.active > a {
+    border: 10px solid #ffc50b;
+    background: #fff;
+}
+
+@media (max-width: 991px) {
+    .navbar-inner .navbar-nav {
+        background: #f1f1f1;
+    }
+    .navbar-inner .navbar-nav li a {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-wrap {
+        padding-left: 80px;
+    }
+}
+
+.content-wrap {
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* === Navbar Icons (phone, map, hamburger) === */
+.navbar-inner .icons > * {
+    text-align: center;
+    color: #000;
+    font-size: 21px;
+    padding: 0;
+    margin-left: 20px;
+    background: #ffc50b;
+    border: none;
+    border-radius: 0;
+    line-height: 50px;
+    width: 50px;
+}
+
+.navbar-inner .icons > a {
+    display: inline-block;
+}
+
+@media (max-width: 380px) {
+    .navbar-inner .logo img {
+        max-height: 140px;
+    }
+    .navbar-inner .icons > * {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 336px) {
+    .navbar-inner .logo img {
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 319px) {
+    .navbar-inner .logo img {
+        max-height: 100px;
+    }
+}
+
+/* === Headings === */
+h1 {
+    text-transform: uppercase;
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .breadcrumb-item.active {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* === Breadcrumb === */
+.breadcrumb {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.breadcrumb a {
+    color: #000;
+    background: #efefef;
+    padding: 2px 4px;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+    color: #ffc50b;
+}
+
+/* === Lead Text === */
+.lead {
+    font-size: 21px;
+    font-weight: 300;
+    margin-left: -30px;
+    padding-left: 25px;
+    border-left: 5px solid #ffc50b;
+}
+
+/* === Side Menu === */
+.sidemenu {
+    margin-top: 25px;
+    padding-left: 35px;
+    list-style: none;
+}
+
+.sidemenu-title {
+    margin-top: 60px;
+    margin-bottom: -15px;
+}
+
+.sidemenu-title i {
+    font-size: 30px;
+    margin-right: 9px;
+    margin-left: -7px;
+    color: #aaa;
+}
+
+.sidemenu-title .title {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.sidemenu-title .title:after {
+    content: "";
+    margin-bottom: 15px;
+}
+
+.sidemenu-title .title a {
+    color: #000;
+}
+
+.sidemenu li {
+    display: block;
+    position: relative;
+    line-height: 2.3;
+}
+
+.sidemenu li:before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: -35px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #ffc50b;
+    height: 5px;
+    width: 21px;
+}
+
+.sidemenu li a {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.sidemenu li.active a {
+    font-weight: 500;
+}
+
+/* === Projects Section === */
+.projects-all {
+    margin: 60px -30px;
+}
+
+.projects-main .projects-title {
+    margin: 60px 0 30px;
+}
+
+.projects .projects-title .title {
+    font-size: 1.75rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.projects-main .projects-title img {
+    margin: 0 15px 0 -35px;
+}
+
+/* Carousel wrapper with arrows */
+.projects-carousel-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.4s ease;
+    padding: 0 15px;
+}
+
+.projects-carousel .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .projects-carousel .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .projects-carousel .item {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+.carousel-arrow-left {
+    left: 0;
+}
+
+.carousel-arrow-right {
+    right: 0;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: hsla(0, 0%, 100%, .85);
+    border: 2px solid #ffc50b;
+    color: #333;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.carousel-arrow:hover {
+    background: #ffc50b;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+@media (min-width: 1200px) {
+    .projects-all {
+        margin: 60px -40px;
+    }
+}
+
+.projects .image-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.projects .image-wrap .circle {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    background: #fff;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 50%;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+.projects-main .item:hover .image-wrap .circle {
+    background: #ffc50b;
+}
+
+.projects .image-wrap img {
+    border-radius: 50%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    max-width: 100%;
+    height: auto;
+}
+
+.projects .image-wrap a {
+    z-index: 2;
+}
+
+.projects .item .title {
+    margin: 10px 0 2px;
+    line-height: .9;
+}
+
+.projects .item .wrap {
+    margin: 0 25px;
+}
+
+.projects .item .title a {
+    color: #000;
+    font-size: 1rem;
+}
+
+.projects .item p {
+    font-weight: 300;
+    color: #4d4d4d;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .projects .item .wrap {
+        margin: 0 15px;
+    }
+    .projects-main .item,
+    .projects-main .title a {
+        font-size: .9rem !important;
+    }
+}
+
+/* === Calculator Button === */
+.button-wrap {
+    margin-top: 60px;
+    background: #f5f5f5;
+    background-size: cover;
+}
+
+.button-wrap .btn {
+    background: #fff;
+    border: 10px solid #ffc50b;
+    margin: 30px 0;
+    border-radius: 0;
+}
+
+.button-wrap .btn:hover {
+    box-shadow: 0 0 15px #fff;
+}
+
+.btn-primary {
+    background: #ffc50b;
+    border-color: transparent;
+    color: #000;
+}
+
+/* === Footer === */
+footer {
+    font-size: .85rem;
+    margin-top: 60px;
+    border-bottom: 5px solid #ffc50b;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: #888;
+    font-weight: 300;
+}
+
+/* === Article content === */
+article ul {
+    padding-left: 20px;
+}
+
+article ul li {
+    margin-bottom: 8px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* === Misc === */
+.modal-dialog,
+.modal-content,
+button,
+input,
+textarea {
+    border-radius: 0 !important;
+}
